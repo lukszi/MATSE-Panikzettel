@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{german,a4}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{pstricks}
+
+\renewcommand{\labelenumi}{\arabic{enumi}.)}
+\renewcommand{\familydefault}{\sfdefault}
+\headsep 0cm
+\headheight 0cm
+\textheight 25cm
+\textwidth 16cm
+\oddsidemargin 0cm
+\parindent 0cm
+
+
+\begin{document}
+
+\textbf{Panikkzettel} \\ 
+\textbf{Lineare Algebra 1, WS 2017/2018} \\
+{\scriptsize (Lukas Szimtenings)}
+\hrule 
+
+\bigskip
+
+\tableofcontents
+\pagebreak
+\section{analytische Geometrie}
+%{\large\textbf{analytische Geometrie}}
+
+\subsection{Skalarprodukt}
+\textbf{Kriterien:}
+
+\begin{itemize}
+\item [SP1:] $\forall a,b \in \mathbb{R}^n: \langle a,b\rangle =\langle b,a\rangle $
+\item [SP2:] $\forall a,b,c \in \mathbb{R}^n: \langle a,b+c\rangle =\langle a,b\rangle  + \langle a,c\rangle $
+\item [SP3:] $\forall \alpha \in \mathbb{R}: \langle \alpha a,b\rangle =\alpha\langle a,b\rangle =\langle a,\alpha b\rangle $
+\item [SP4:] $\forall a\in\mathbb{R}^n\setminus \{0\}:\langle a,a\rangle >0$
+\end{itemize}
+\textbf{Euklidsches Skalarprodukt}
+
+Wir benutzen normalerweise das Euklidsche Skalarprodukt was wie folgt definiert ist:
+\[\langle a,b\rangle:=\sum_{i=1}^n a_ib_i\]
+
+\textbf{Geometrische Bedeutung}
+
+\subsection{Euklidsche Norm}
+\textbf{Kriterien:}
+
+\begin{itemize}
+\item [N0:] $\lVert a\rVert \in \mathbb{R}$
+\item [N1:] $\lVert a\rVert \geq 0$
+\item [N2:] $\lVert a\rVert = 0 \Leftrightarrow a=0$
+\item [N3:] $\forall\lambda\in\mathbb{R}:\lVert\lambda a\rVert = |\lambda |\lVert a\rVert$
+\item [N4:] $\lVert a+b\rVert\leq\lVert a\rVert +\lVert b\rVert$
+\end{itemize}
+\end{document}
