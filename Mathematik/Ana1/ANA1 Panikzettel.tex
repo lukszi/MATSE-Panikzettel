@@ -1,0 +1,183 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{german,a4}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{pstricks}
+\usepackage{svg}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\renewcommand{\labelenumi}{\arabic{enumi}.)}
+\renewcommand{\familydefault}{\sfdefault}
+\headsep 0cm
+\headheight 0cm
+\textheight 25cm
+\textwidth 16cm
+\oddsidemargin 0cm
+\parindent 0cm
+
+
+\begin{document}
+
+\textbf{Panikzettel} \\ 
+\textbf{Analysis 1, WS 2017/2018} \\
+{\scriptsize (Lukas Szimtenings)}
+\hrule 
+
+\bigskip
+
+\tableofcontents
+\pagebreak
+\section{Grundlagen}
+
+\subsection{Eigenschaften von Mengen}
+
+\subsubsection{basics}
+Sei $G$ die Menge eines geordneten Körpers, $F$ Die Menge aller oberen Schranken
+\begin{itemize}
+\item $a$ ist Obere Schranke: $a\geq x\quad \forall x \in G$ (Analog für Untere Schranke)
+\item $a$ ist Supremum: $a\leq x \quad \forall x \in F$ (Analog für Infimum)
+\item $a$ ist Maximum: $a$ ist Supremum von $G$ und $a \in G$ (Analog für Minimum)
+\end{itemize}
+
+
+\subsubsection{advanced}
+\textbf{$\epsilon$-Umgebung}\\
+\begin{figure}[htbp]
+  \centering
+  \includesvg{Epsilon_Umgebung}
+  \caption{Epsilon Umgebung}
+\end{figure}
+wenn $a\in A$ ist die Epsilonumgebung definiert als:\\
+\[U_{\epsilon}(a)=\{ x\in A | x>a-\epsilon \wedge x<a+\epsilon\}\]
+
+\textbf{innerer Punkt}: 
+$a_0\in A$ ist innerer Punkt wenn gilt: $\exists \epsilon : U_{\epsilon}(a_0)\subset A$, es also mindestens eine Epsilonumgebung gibt die komplett in der Menge A enthalten ist\\
+Offene Menge: Alle Punkte der Menge sind innere Punkte\\
+
+\textbf{Häufungspunkt}: 
+a ist Häufungspunkt wenn gilt: Für jedes noch so kleine $\epsilon$ existiert eine $\epsilon$-Umgebung die mindestens einen Punkt aus A enthält der nicht a ist.\\
+$\forall \epsilon>0:\quad \exists x \in A, x \in U_{\epsilon}(a) $\\
+
+\textbf{Abgeschlossenheit}: 
+A ist abgeschlossen: jeder Häufungspunkt liegt in A\\
+Folgende Mengen sind abgeschlossen:
+\begin{itemize}
+	\item jede endliche Menge
+	\item $\mathbb{N}$
+	\item $[a,b]$ 
+\end{itemize}
+
+\pagebreak
+\section{Folgen und Reihen}
+\subsection{Rekursion}
+\subsubsection{Wichtige rekursive Folgen}
+
+\textbf{arithmetische Folge:}
+\begin{itemize}
+\item definiert als: $a_n = a_{n-1} + c $
+\item Bildungsgesetz: $a_n = c\cdot n+a_0$
+\item Konstant mit: $\Delta a := a_n - a_{n-1} = c$
+\end{itemize}
+
+\textbf{geometrische Folge:}
+\begin{itemize}
+\item definiert als: $a_n = a_{n-1}\cdot c$
+\item Bildungsgesetz: $a_n = a_0\cdot c^n$
+\item Konstant mit: $\frac{a_n}{a_{n-1}}=c$
+\item Mit $c>1$ ist $a_n$ wachsend
+\item Mit $c<1$ ist $a_n$ fallend, mit $a_0>0$ aber immer positiv
+\end{itemize}
+
+\subsubsection{Arithmetisch oder geometrisch :}
+wenn die Differenz $a_n-a_{n-1}$ Konstant ist, arithmetisch\\
+wenn der Quotient $\frac{a_n}{a_{n-1}}$ Konstant ist, geometrisch\\
+
+\subsection{Summen(Reihen):}
+\subsubsection{Wichtige Rechenregeln:}
+\[\sum_{k=m}^nc=c\cdot(n-m+1)\]
+\[\sum_{k=m}^na_k=\sum_{k=m+l}^{n+l}a_{k-l}\]
+
+\subsubsection{Wichtige Summen}
+\textbf{arithmetische Summe}
+\[\sum_{k=1}^nk=\frac{n\cdot(n+1)}{2}\]
+\textbf{geometrische Summe}
+\[\sum_{k=0}^nc^k=\frac{1-c^{n+1}}{1-c}\]
+mit $c=1$
+\[\sum_{k=0}^n1^k=n+1\]
+
+\subsection{Binomialkoeffizient}
+\subsubsection{Definition}
+\[\binom{n}{k}=\begin{cases}
+					0 &\quad k>n\\
+					\frac{n!}{(n-k)!\cdot k!} &\quad k\leq n\\
+				\end{cases}\]
+
+\subsubsection{Rechenregeln}
+Im folgenden gelte $k\leq n$:\\
+
+\begin{itemize}
+\item $\binom{n}{0}=1$
+\item $\binom{n}{n}=1$
+\item $\binom{n}{1}=n$
+\item $\binom{n}{k}=\binom{n-1}{k}+\binom{n-1}{k-1}$
+\end{itemize}
+
+\subsubsection{Binomischer Lehrsatz}
+$(a+b)^n=\sum_{k=0}^n \binom{n}{k}a^k\cdot b^{n-k}$
+
+\pagebreak
+\section{Konvergenz von Folgen}
+\subsection{Grenzwert}
+$a$ ist Grenzwert von $a_n$ wenn gilt:\\
+Für jedes noch so kleine $\epsilon>0$ gibt es ein $n_0(\epsilon)$ ab dem alle $a_n$ näher als $\epsilon$ an $a$ liegen.\\
+In der Praxis $|a_n-a|<\epsilon$ mit Abschätzungen auf $n>\epsilon...$ umformen\\\\
+Eine Folge die einen Grenzwert besitzt heißt Konvergent\\
+Eine Folge die den Grenzwert 0 besitzt heißt Nullfolge\\
+\textbf{jede beschränkte monotone Folge ist konvergent}
+
+\subsection{Sandwich-Lemma}
+gegeben seien $a_n$, $b_n$ und $c_n$ mit $a_n = b$, $c_n = b$\\
+existiert ein $n_0$ so dass, $\forall n>n_0:\quad a_n<b_n<c_n$, dann gilt auch $b_n=b$
+
+\subsection{Rechenregeln}
+\begin{itemize}
+	\item $\lim\limits_{n\rightarrow \infty} (a_n+b_n)=\lim\limits_{n\rightarrow \infty}a_n+\lim\limits_{n\rightarrow \infty}b_n$
+	\item $\lim\limits_{n\rightarrow \infty} (c\cdot a_n)=c\cdot\lim\limits_{n\rightarrow \infty}a_n$
+	\item $\lim\limits_{n\rightarrow \infty} (a_n\cdot b_n)=\lim\limits_{n\rightarrow \infty}a_n\cdot\lim\limits_{n\rightarrow \infty}b_n$
+	\item $\lim\limits_{n\rightarrow \infty} (\frac{a_n}{b_n})=\frac{\lim\limits_{n\rightarrow \infty}a_n}{\lim\limits_{n\rightarrow \infty}b_n}$
+\end{itemize}
+
+\subsection{Wichtige Grenzwerte}
+\begin{itemize}
+	\item $\lim\limits_{n\rightarrow \infty} \frac{1}{n^a}=0\quad$ für $a>0$
+	\item $\lim\limits_{n\rightarrow \infty} \sqrt[n]{a}=1\quad$ für $a>0$
+	\item $\lim\limits_{n\rightarrow \infty} q^n=0\quad$ für $|q|<1$
+	\item $\lim\limits_{n\rightarrow \infty} n^k\cdot q^n=0\quad$ für $|q|<1, k\in\mathbb{N}, q\in\mathbb{R}$
+	\item $\lim\limits_{n\rightarrow \infty} \sqrt[n]{n}=1$
+	\item $\lim\limits_{n\rightarrow \infty} \frac{n!}{n^n}=0$
+\end{itemize}
+
+
+\subsection{Rekursive Folgen}
+\begin{enumerate}
+	\item Monotonie prüfen durch Werte ausrechnen oder Mathematikerbrille
+	\item Monotonie per Induktion zeigen
+	\item Beschränktheit zeigen 
+	\item \begin{enumerate}
+		\item geeignete Schranke wählen
+		\item per Induktion zeigen
+	\end{enumerate}
+	\item so tun als kenne man den Grenzwert a und mit lim$a_{n+1}$ gleichsetzen
+	\item $a_{n+1}$ auflösen und dann nach a umformen
+\end{enumerate}
+
+\pagebreak
+\section{Formelsammlung}
+\[\sum_{k=1}^nk=\frac{n\cdot(n+1)}{2}\]
+\[\sum_{k=0}^nc^k=\frac{1-c^{n+1}}{1-c}\quad(c\neq 1)\]
+\end{document}

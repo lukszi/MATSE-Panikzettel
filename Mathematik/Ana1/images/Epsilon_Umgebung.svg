@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="699.35406"
+   height="67.074142"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Epsilon_Umgebung.svg"
+   inkscape:export-filename="C:\Graphic\Inkscape\share\grph\konvergenz.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 50 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="698.65961 : 50 : 1"
+       inkscape:persp3d-origin="349.3298 : 33.333333 : 1"
+       id="perspective2551" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path3809"
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3800"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.97309,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z"
+         transform="matrix(1.1,0,0,1.1,1.1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7344579"
+     inkscape:cx="349.67708"
+     inkscape:cy="33.53707"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1676"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="19"
+     height="100px"
+     showgrid="true"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3245"
+       visible="true"
+       enabled="false"
+       empspacing="5"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Konvergenz einer Folge</dc:title>
+        <dc:date>8. Juli 2006</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matthias Vogelgesang</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.578716,-150.71492)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#0000ff;stroke-width:1.03448677000000000;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3837"
+       sodipodi:cx="310.62192"
+       sodipodi:cy="532.63867"
+       sodipodi:rx="15.657365"
+       sodipodi:ry="17.67767"
+       d="m 296.11888,525.97689 c 3.25872,-9.04332 12.39367,-13.39181 20.40347,-9.71261 4.24755,1.95105 7.52404,5.90633 8.96444,10.8216"
+       sodipodi:start="3.5279828"
+       sodipodi:end="5.9636625"
+       sodipodi:open="true"
+       inkscape:transform-center-y="-21.804681"
+       inkscape:transform-center-x="-8.2985717"
+       transform="matrix(-2.61784e-2,-1.43333,1.29007,-2.90856e-2,-555.296,656.82)" />
+    <path
+       inkscape:transform-center-x="8.2991534"
+       inkscape:transform-center-y="21.804809"
+       sodipodi:open="true"
+       sodipodi:end="5.9636625"
+       sodipodi:start="3.5279828"
+       d="m 296.11888,525.97689 c 3.25872,-9.04332 12.39367,-13.39181 20.40347,-9.71261 4.24755,1.95105 7.52404,5.90633 8.96444,10.8216"
+       sodipodi:ry="17.67767"
+       sodipodi:rx="15.657365"
+       sodipodi:cy="532.63867"
+       sodipodi:cx="310.62192"
+       id="path3839"
+       style="fill:#ffffff;fill-opacity:1;stroke:#0000ff;stroke-width:1.03480995000000009;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       sodipodi:type="arc"
+       transform="matrix(2.61784e-2,1.43333,-1.29007,2.90856e-2,1294.03,-264.777)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.787;stroke-linecap:butt;stroke-linejoin:miter;marker:none;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 22.472326,196.08093 L 719.34468,196.08093"
+       id="path1872" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.51545px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 369.3669,175.90184 L 369.3669,216.14142"
+       id="path3827" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.44669914px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sylfaen"
+       x="363.12558"
+       y="164.04601"
+       id="text3849"><tspan
+         sodipodi:role="line"
+         id="tspan3851"
+         x="363.12558"
+         y="164.04601">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.44669914px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.40699995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Sylfaen"
+       x="92.366928"
+       y="164.036"
+       id="text4784"><tspan
+         sodipodi:role="line"
+         x="92.366928"
+         y="164.036"
+         id="tspan4788">a-$\epsilon$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.44669914px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sylfaen"
+       x="608.92963"
+       y="164.161"
+       id="text4792"><tspan
+         sodipodi:role="line"
+         id="tspan4794"
+         x="608.92963"
+         y="164.161">a+$\epsilon$</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 702.05944,190.60608 C 720.33277,195.97818 720.33277,196.15148 720.33277,196.15148 L 702.05944,201.17699 L 702.05944,201.17699"
+       id="path3247" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:1.78699994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 100.25289,196.0178 538.23224,0"
+       id="path3847"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
