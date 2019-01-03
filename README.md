@@ -3,7 +3,7 @@ Alle eure Panikzettel needs
 
 Unter Windows müssen folgende Tools installiert sein:
 
--inkscape
+-inkscape(muss auch in der PATH variable enthalten sein)
 
 -miktex
 
