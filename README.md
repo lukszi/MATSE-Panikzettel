@@ -1,9 +1,9 @@
 # MATSE-Panikzettel
 Alle eure Panikzettel needs
 
-Unter Windows müssen folgende Tools installiert sein:
+Unter Windows müssen folgende Tools installiert sein (müssen auch in der PATH variable enthalten sein):
 
--inkscape(muss auch in der PATH variable enthalten sein)
+-inkscape
 
 -miktex
 
