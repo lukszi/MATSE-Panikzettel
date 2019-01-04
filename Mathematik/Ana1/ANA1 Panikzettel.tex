@@ -188,12 +188,56 @@ Alle Werte einer Cauchy Folge liegen ab einem bestimmten n beliebig nah aneinand
 jede Cauchy-konvergente Folge ist Konvergent und umgekehrt
 \pagebreak
 
-\section{Unendliche Reihen}
+\section{Konvergenz von Reihen}
 \subsection{Die Folge der Partialsummen}
 \textbf{Partialsumme}
 Eine Partialsumme ist ein Glied einer Folge die entsteht wenn man die Elemente einer anderen Folge aufsummiert\\
 Formal: \[S_n :=\sum_{k=1}^{n}a_k\]
-$S_n$ heißt dann die n-te Partialsumme
+$S_n$ heißt dann die n-te Partialsumme\\
+Der Limes der Partialsummen ist eine Reihe\\
+\subsection{Wichtige Reihen}
+\begin{itemize}
+	\item Geometrische Reihe: $\sum_{k=0}^\infty c^k=\frac{1}{1-c}\quad\text{(für }c<1$), divergiert mit $|c|\geq 1$
+	\item Harmonische Reihe: $\sum_{k=0}^\infty \frac{1}{k}=\infty$ divergiert
+\end{itemize}
+
+\subsection{Absolute Konvergenz}
+Absolute Konvergenz ist gegeben wenn die Reihe die aus dem Betrag der Folge entsteht konvergiert.\\
+\[\sum_{k=0}^n a_k \text{ konvergiert absolut wenn } \sum_{k=0}^n |a_k| \text{ konvergiert }\]
+\begin{itemize}
+	\item Jede geometrische Reihe konvergiert absolut
+	\item absolute Konvergenz impliziert Konvergenz
+	\item Konvergente Reihe die aus $a_n>=0$ besteht ist immer absolut konvergent
+\end{itemize}
+
+\subsection{Konvergenzkriterien}
+\subsubsection{Majoranten und Minorantenkriterium}
+\textbf{Majorantenkriterium}\\
+Idee: Suche eine Folge $b_n$ die ab einem bestimmten n größer ist als $a_n$.\\
+Konvergiert die Reihe die aus $b_n$ entsteht, konvergiert auch die Reihe aus $a_n$\\
+$b_n$ heißt Majorante\\
+\textbf{Minorantenkriterium}\\
+Idee: Suche eine Folge $b_n$ die ab einem bestimmten n kleiner ist als $a_n$\\
+Divergiert die Reihe die aus $b_n$ entsteht, divergiert auch die Reihe aus $a_n$\\
+$b_n$ heißt Minorante\\
+
+\subsubsection{Wurzelkriterium}
+Sei $a_n\geq 0$, existiert dann $r = \lim\limits_{n\rightarrow\infty} \sqrt[n]{a_n}$, gilt:
+\begin{enumerate}
+	\item $r<1$		die Reihe konvergiert absolut
+	\item $r>1$		die Reihe divergiert
+	\item $r=1$		Keine Aussage möglich
+\end{enumerate}
+Das Kriterium lässt sich auch nutzen wenn $a_n<0$ ist. Statt aus $a_n$ wird r dann aus $|a_n|$ berechnet, und das Kriterium zeigt nur Konvergenz, keine analoge Konvergenz.
+
+\subsubsection{Quotientenkriterium}
+Sei $a_n> 0$, existiert dann $r = \lim\limits_{n\rightarrow\infty} \frac{a_{n+1}}{a_n}$, gilt genau wie beim Wurzelkriterium:
+\begin{enumerate}
+	\item $r<1$		die Reihe konvergiert absolut
+	\item $r>1$		die Reihe divergiert
+	\item $r=1$		Keine Aussage möglich
+\end{enumerate}
+Analog zum Wurzelkriterium lässt sich auch dieses Kriterium ohne Einschränkung der folge nutzen.
 
 \pagebreak
 
