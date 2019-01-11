@@ -56,6 +56,7 @@ Sei $G$ die Menge eines geordneten Körpers, $F$ Die Menge aller oberen Schranke
 wenn $a\in A$ ist die Epsilonumgebung definiert als:\\
 \[U_{\epsilon}(a)=\{ x\in A | x>a-\epsilon \wedge x<a+\epsilon\}\]
 
+
 \textbf{innerer Punkt}: 
 $a_0\in A$ ist innerer Punkt wenn gilt: $\exists \epsilon : U_{\epsilon}(a_0)\subset A$, es also mindestens eine Epsilonumgebung gibt die komplett in der Menge A enthalten ist\\
 Offene Menge: Alle Punkte der Menge sind innere Punkte\\
@@ -187,6 +188,14 @@ existiert ein $n_0$ so dass, $\forall n>n_0:\quad a_n<b_n<c_n$, dann gilt auch $
 Alle Werte einer Cauchy Folge liegen ab einem bestimmten n beliebig nah aneinander, sprich die Differenz ist kleiner als ein beliebiges $\epsilon>0$.\\
 \[\forall \epsilon > 0 \exists n_0(\epsilon) \text{ mit } |a_n-a_m|<\epsilon\quad\forall n> m\geq n_0\]
 jede Cauchy-konvergente Folge ist Konvergent und umgekehrt
+\paragraph{Schema F}
+\begin{itemize}
+	\item Den Betrag durch abschätzen entfernen
+	\item Am besten n durch abschätzen entfernen
+	\item Am ende sollte $\epsilon>\text{ irgendwas}$ rauskommen.
+	\item Nach m oder n umformen
+	\item $n_0$ wählen, indem man den Term mit $\epsilon$ nach unten rundet und eins addiert.
+\end{itemize}
 \pagebreak
 
 \section{Konvergenz von Reihen}
@@ -230,7 +239,7 @@ Sei $a_n\geq 0$, existiert dann $r = \lim\limits_{n\rightarrow\infty} \sqrt[n]{a
 	\item $r>1$		die Reihe divergiert
 	\item $r=1$		Keine Aussage möglich
 \end{enumerate}
-Das Kriterium lässt sich auch nutzen wenn $a_n<0$ ist. Statt aus $a_n$ wird r dann aus $|a_n|$ berechnet, und das Kriterium zeigt nur Konvergenz, keine analoge Konvergenz.
+Das Kriterium lässt sich auch nutzen wenn $a_n<0$ ist. Statt aus $a_n$ wird r dann aus $|a_n|$ berechnet, und das Kriterium zeigt nur Konvergenz, keine absolute Konvergenz.
 
 \subsubsection{Quotientenkriterium}
 Sei $a_n> 0$, existiert dann $r = \lim\limits_{n\rightarrow\infty} \frac{a_{n+1}}{a_n}$, gilt genau wie beim Wurzelkriterium:
