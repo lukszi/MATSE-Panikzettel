@@ -199,6 +199,7 @@ Der Limes der Partialsummen ist eine Reihe\\
 \begin{itemize}
 	\item Geometrische Reihe: $\sum_{k=0}^\infty c^k=\frac{1}{1-c}\quad\text{(für }c<1$), divergiert mit $|c|\geq 1$
 	\item Harmonische Reihe: $\sum_{k=0}^\infty \frac{1}{k}=\infty$ divergiert
+	\item Alternierende Reihe: $\sum_{k=0}^\infty (-1)^{n-1}\cdot a_n$ Konvergenz oder Divergenz mittels Leibniz-Kriterium
 \end{itemize}
 
 \subsection{Absolute Konvergenz}
@@ -238,6 +239,21 @@ Sei $a_n> 0$, existiert dann $r = \lim\limits_{n\rightarrow\infty} \frac{a_{n+1}
 	\item $r=1$		Keine Aussage möglich
 \end{enumerate}
 Analog zum Wurzelkriterium lässt sich auch dieses Kriterium ohne Einschränkung der folge nutzen.
+
+\subsubsection{Leibnizkriterium}
+Regelt die Konvergenz der alternierenden Reihe:\\
+Sei $a_n>0$, $a_n$ monoton fallend und $\lim\limits_{n\rightarrow\infty}a_n=0$, dann konvergiert
+\[\sum_{n=0}^{\infty}(-1)^{n}\cdot a_n\]
+
+\subsection{Potenzreihe}
+Definiert als:
+\[p(x)=\sum_{n=0}^{\infty}a_nx^n\]
+konvergiert wenn:
+\begin{itemize}
+	\item $x=0$
+	\item $\lvert x\rvert<\lim\limits_{n\rightarrow\infty}\lvert\frac{a_n}{a_{n+1}}\rvert$
+	\item $\lvert x\rvert<\frac{1}{\lim\limits_{n\rightarrow\infty}\sqrt[n]{\lvert a_n \rvert}}$
+\end{itemize}
 
 \pagebreak
 
